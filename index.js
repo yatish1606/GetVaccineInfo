@@ -37,7 +37,7 @@ axios.get('https://cdn-api.co-vin.in/api/v2/admin/location/states', { headers: h
 
                 ageAbove45 = parseInt(prompt('Enter your age : ')) >= 45
 
-                while (true) {
+                
 
                     let uri = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=${districtID}&date=${dateToBook}-${month}-2021`
                     axios.get(uri, {
@@ -49,14 +49,14 @@ axios.get('https://cdn-api.co-vin.in/api/v2/admin/location/states', { headers: h
                     })
                         .then(response => {
                             
-                            const { from, to, fee_type, vaccine_fees, sessions} = response.data.from
+                            const { from, to, fee_type, vaccine_fees, sessions} = response.data.centers[0]
                             
                             sessions.forEach(session => {
                                 const { available_capacity, min_age_limit, vaccine, slots } = session
                             })
                         })
                         .catch(err => console.log(err))
-                }
+                
             })
             .catch(err => console.log(err))
     })
