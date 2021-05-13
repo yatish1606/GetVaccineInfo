@@ -5,16 +5,22 @@ A command line application to quickly get information about available vaccine sl
 ### Getting started
 
 #### 1. Clone the repository 
-`
+```javascript
 git clone https://github.com/yatish1606/GetVaccineInfo.git
-`
+```
 
 #### 2. Get into the directory 
-`cd GetVaccineInfo`
+```javascript
+cd GetVaccineInfo
+```
 
 #### 3. Install required modules
-`npm install`
+```javascript
+npm install
+```
 The tool uses a few modules to display data in a readable and pretty format
 
 #### 4. Run the script
-`node index.js`
+```javascript
+node index.js
+```
