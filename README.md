@@ -5,7 +5,7 @@ A command line application to quickly get information about available vaccine sl
 ### Getting started
 
 #### 1. Clone the repository 
-```powershell
+```sh
 git clone https://github.com/yatish1606/GetVaccineInfo.git
 ```
 
